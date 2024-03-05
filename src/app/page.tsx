@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "Anthony Cueva is a software engineer based in Peru",
     images: [
       {
-        url: "./caverne_io_screenshot.png",
+        url: "/caverne_io_screenshot.png",
         width: 1200,
         height: 630,
         alt: "caverne.io",
