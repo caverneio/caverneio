@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CaverneImage from "./pexels-jeremy-bishop-2397414.jpg";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,15 +19,22 @@ export default function Home() {
           on the internet
         </p>
       </div>
-      <div className="absolute top-0 bottom-0 right-0 left-0 w-full h-full z-10 bg-background/80"/>
-        
+      <a
+        className="absolute bottom-0 right-0 py-1 px-2 text-xs bg-muted text-muted-foreground z-20 rounded-tl"
+        href="https://www.pexels.com/photo/person-standing-and-holding-lamp-inside-cave-2397414/"
+      >
+        Photo by Jeremy Bishop
+      </a>
+
+      <div className="absolute top-0 bottom-0 right-0 left-0 w-full h-full z-10 bg-background/80" />
+
       <div className="absolute top-0 bottom-0 right-0 left-0 w-full h-full">
         <Image
           src={CaverneImage}
           alt="Caverne photography"
           className="object-cover min-w-full min-h-full"
         />
-      d</div>
+      </div>
     </div>
   );
 }
